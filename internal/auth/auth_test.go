@@ -1,9 +1,9 @@
 package auth
 
 import (
-	"testing"
 	"errors"
 	"net/http"
+	"testing"
 )
 
 func TestGetApiKey(t *testing.T) {
@@ -38,7 +38,7 @@ func TestGetApiKey(t *testing.T) {
 			expected: "",
 			err:      ErrNoAuthHeaderIncluded,
 		},
-	}
+						}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -52,5 +52,5 @@ func TestGetApiKey(t *testing.T) {
 			}
 		})
 	}
-	
+
 }
